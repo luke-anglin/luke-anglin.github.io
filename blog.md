@@ -43,8 +43,6 @@ permalink: /blog/
     controlsDiv.classList.add('blog-controls');
 
     // Category Filter
-    const categoryLabel = document.createElement('label');
-    categoryLabel.textContent = 'Filter by Category: ';
     const categorySelect = document.createElement('select');
     categorySelect.id = 'category-filter';
     categorySelect.innerHTML = '<option value="all">All Categories</option>';
@@ -71,12 +69,9 @@ permalink: /blog/
     console.log('Unique categories found:', Array.from(allCategories));
 
 
-    controlsDiv.appendChild(categoryLabel);
     controlsDiv.appendChild(categorySelect);
 
     // Sort Select
-    const sortLabel = document.createElement('label');
-    sortLabel.textContent = 'Sort by: ';
     const sortSelect = document.createElement('select');
     sortSelect.id = 'sort-select';
     sortSelect.innerHTML = `
@@ -84,7 +79,6 @@ permalink: /blog/
       <option value="title">Title</option>
     `;
 
-    controlsDiv.appendChild(sortLabel);
     controlsDiv.appendChild(sortSelect);
 
     // Insert controls before posts

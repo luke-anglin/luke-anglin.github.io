@@ -5,5 +5,6 @@ source "https://rubygems.org"
 group :jekyll do
   gem "jekyll"
   gem "jekyll-paginate"
+  gem "jekyll-toc"
 end
 

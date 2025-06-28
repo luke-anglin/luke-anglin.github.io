@@ -571,8 +571,10 @@ a.pagination-item:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 300px; /* Allow cards to grow, shrink, and have a base width */
+  /* flex properties are likely not needed anymore for vertical stacking */
+  /* flex: 1 1 300px; */
   max-width: 100%; /* Ensure cards don't exceed container width */
+  margin-bottom: 1.5em; /* Add space between cards */
 }
 
 .post-card a { /* Add styling to the link wrapping the card */
@@ -608,19 +610,6 @@ a.pagination-item:hover {
   margin-bottom: 1em;
   color: #9a9a9a;
   font-size: 0.9em;
-}
-
-/* Adjust card width for larger screens */
-@media (min-width: 48em) {
-  .post-card {
-    flex: 1 1 calc(50% - 1em); /* Two cards per row with gap */
-  }
-}
-
-@media (min-width: 62em) {
-  .post-card {
-    flex: 1 1 calc(33.333% - 1em); /* Three cards per row with gap */
-  }
 }
 
 .post-card-content {
@@ -664,32 +653,39 @@ a.pagination-item:hover {
 
 /* Blog Controls Styling */
 .blog-controls {
-  margin-bottom: 2em;
-  padding: 1em;
-  border: 1px solid #ddd; /* Slightly darker border */
-  border-radius: 8px;
-  background-color: #f5f5f5; /* Lighter background */
+  /* Removed background, border, and shadow */
+  margin-bottom: 2em; /* Add space below the controls */
+  padding: 0; /* Remove padding */
   display: flex;
-  gap: 1.5em; /* Increased gap */
+  gap: 1.5em; /* Keep space between items */
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  justify-content: flex-start; /* Left align items */
 }
 
 .blog-controls label {
   font-weight: bold;
   color: #555; /* Slightly darker text */
+  margin-right: 0.5em; /* Add space between label and select */
 }
 
 .blog-controls select {
-  padding: 0.6em 1em; /* Increased padding */
+  /* Custom styles for select box */
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow in Webkit browsers */
+  padding: 0.7em 2em 0.7em 1em; /* Increased right padding for custom arrow */
   border-radius: 4px;
-  border: 1px solid #bbb; /* Slightly darker border */
-  background-color: #fff; /* White background for select */
+  border: 1px solid #ccc; /* Lighter border */
+  background-color: #fff; /* White background */
   font-size: 1em;
   cursor: pointer;
   outline: none; /* Remove default outline */
-  transition: border-color 0.2s ease-in-out; /* Smooth transition */
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+  vertical-align: middle; /* Ensure vertical alignment */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23555%22%20d%3D%22M7%2010l5%205%205-5H7z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow SVG */
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 0.65em auto;
 }
 
 .blog-controls select:focus {
@@ -714,4 +710,48 @@ a.pagination-item:hover {
 /* Hidden class for filtering */
 .hidden {
   display: none !important;
+}
+
+/* Styling for the image on the About page */
+.about-image {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make it a block element */
+  margin: 0 auto 1.5em auto; /* Center the image and add bottom margin */
+}
+
+/* Styling for the Table of Contents */
+.toc {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 0.9em;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+.toc li {
+  margin-bottom: 0.5em;
+}
+
+.toc a {
+  color: #505050; /* Match masthead title color */
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #268bd2; /* Match link hover color */
+  text-decoration: underline;
+}
+
+.about-image {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
 }
