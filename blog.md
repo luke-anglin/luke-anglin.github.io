@@ -137,11 +137,10 @@ permalink: /blog/
 
 
       // Reorder posts in the DOM
-      visiblePosts.forEach((post, index) => {
-        post.style.order = index;
+      // Reorder posts in the DOM by appending them in the new order
+      visiblePosts.forEach(post => {
+        postsContainer.appendChild(post);
       });
-      console.log('Posts reordered.');
-
     }
 
     // Add event listeners
