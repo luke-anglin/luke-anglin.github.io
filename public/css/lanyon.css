@@ -320,9 +320,10 @@ a.sidebar-nav-item:focus {
 
 /* Meta data line below post title */
 .post-date {
-  display: block;
-  margin-top: -.5rem;
+  display: inline-block;
+  margin-top: 0; /* Adjust margin to align with title/categories */
   margin-bottom: 1rem;
+  margin-right: 1rem; /* Add space between date and categories */
   color: #9a9a9a;
 }
 
@@ -555,4 +556,162 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/* Post Card Styling */
+.posts {
+  /* Removed flexbox properties to stack cards vertically */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: 1.5em; */
+}
+
+.post-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Allow cards to grow, shrink, and have a base width */
+  max-width: 100%; /* Ensure cards don't exceed container width */
+}
+
+.post-card a { /* Add styling to the link wrapping the card */
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color */
+  display: block; /* Make the entire card clickable */
+  height: 100%; /* Make the link fill the card height */
+}
+
+/* Remove hover effect from the link */
+.post-card a:hover {
+  background-color: transparent;
+}
+
+/* Add hover effect to the entire card */
+.post-card:hover {
+  transform: scale(1.02); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+}
+
+.post-card-content {
+  padding: 1.5em;
+}
+
+.post-card-content .post-title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.post-card-content .post-date {
+  display: block;
+  margin-bottom: 1em;
+  color: #9a9a9a;
+  font-size: 0.9em;
+}
+
+/* Adjust card width for larger screens */
+@media (min-width: 48em) {
+  .post-card {
+    flex: 1 1 calc(50% - 1em); /* Two cards per row with gap */
+  }
+}
+
+@media (min-width: 62em) {
+  .post-card {
+    flex: 1 1 calc(33.333% - 1em); /* Three cards per row with gap */
+  }
+}
+
+.post-card-content {
+  padding: 1.5em;
+}
+
+.post-card-content .post-title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.post-card-content .post-date {
+  display: block;
+  margin-bottom: 1em;
+  color: #9a9a9a;
+  font-size: 0.9em;
+}
+
+/* Category and Tag Styling */
+.post-categories,
+.post-tags {
+  display: inline-block; /* Change to inline-block for horizontal alignment */
+  margin-top: 0; /* Adjust margin to align with date */
+  margin-bottom: 1.5em; /* Keep some bottom margin */
+  padding-left: 1.5em; /* Add left padding to align with content */
+  font-size: 0.8em;
+  color: #777;
+  /* Removed padding as inline-block handles spacing differently */
+}
+
+.post-categories a,
+.post-tags a {
+  color: #555;
+  text-decoration: underline;
+}
+
+.post-categories a:hover,
+.post-tags a:hover {
+  color: #268bd2;
+}
+
+/* Blog Controls Styling */
+.blog-controls {
+  margin-bottom: 2em;
+  padding: 1em;
+  border: 1px solid #ddd; /* Slightly darker border */
+  border-radius: 8px;
+  background-color: #f5f5f5; /* Lighter background */
+  display: flex;
+  gap: 1.5em; /* Increased gap */
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.blog-controls label {
+  font-weight: bold;
+  color: #555; /* Slightly darker text */
+}
+
+.blog-controls select {
+  padding: 0.6em 1em; /* Increased padding */
+  border-radius: 4px;
+  border: 1px solid #bbb; /* Slightly darker border */
+  background-color: #fff; /* White background for select */
+  font-size: 1em;
+  cursor: pointer;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+.blog-controls select:focus {
+  border-color: #6a9fb5; /* Highlight color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(106, 159, 181, 0.25); /* Focus ring */
+}
+
+/* Category Tag Styling */
+.category-tag {
+  display: inline-block; /* Display as inline block */
+  background-color: #e0e0e0; /* Light grey background */
+  color: #555; /* Darker text color */
+  padding: 0.2em 0.6em; /* Padding inside the tag */
+  margin-right: 0.5em; /* Space between tags */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 0.8em; /* Smaller font size */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Hidden class for filtering */
+.hidden {
+  display: none !important;
 }
