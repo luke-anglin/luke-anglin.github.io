@@ -48,12 +48,33 @@
 
     <header>
         <div class="container">
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="#" class="active">Engineering</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="assets/Luke_Anglin_Resume.pdf" class="resume-link" target="_blank">Resume</a></li>
                     <li class="social-icons-nav">
+                        <a href="https://www.linkedin.com/in/luke-anglin-9910411b5/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/luke-anglin" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#engineer" class="nav-link">Mission</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="assets/Luke_Anglin_Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                    <li class="mobile-social-icons">
                         <a href="https://www.linkedin.com/in/luke-anglin-9910411b5/" target="_blank"
                             aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/luke-anglin" target="_blank" aria-label="GitHub"><i
@@ -83,9 +104,9 @@
                 <i class="fas fa-microchip tech-icon" aria-hidden="true"></i>
                 <div class="tech-icon-label">GPU</div>
             </div>
-            <div class="tech-icon-card" role="listitem" title="Distributed Systems">
+            <div class="tech-icon-card" role="listitem" title="Distributed Parallelism">
                 <i class="fas fa-network-wired tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Distributed</div>
+                <div class="tech-icon-label">Distributed Parallelism</div>
             </div>
             <div class="tech-icon-card" role="listitem" title="Cloud / Infra">
                 <i class="fas fa-server tech-icon" aria-hidden="true"></i>
@@ -435,7 +456,7 @@
                     </div>
                     <div class="personal-item" role="listitem">
                         <i class="fas fa-hammer personal-icon" aria-hidden="true"></i>
-                        <div class="personal-label">Building furniture</div>
+                        <div class="personal-label">Building</div>
                     </div>
                     <div class="personal-item" role="listitem">
                         <i class="fas fa-language personal-icon" aria-hidden="true"></i>
@@ -453,7 +474,7 @@
                 <h2>Let's Build</h2>
                 <p>Open to discussing complex systems and new opportunities.</p>
                 <div class="contact-form-wrapper">
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <form action="https://formspree.io/f/mojjjrwe" method="POST" class="contact-form">
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" placeholder="Your Message" required></textarea>
                         <div style="text-align: center; width: 100%;">
@@ -479,6 +500,27 @@
 
 
     <script>
+        // Hamburger Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-toggle');
+            const mobileNav = document.getElementById('mobileNav');
+            const navLinks = document.querySelectorAll('.mobile-nav .nav-link');
+
+            hamburger.addEventListener('click', () => {
+                const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isOpen);
+                mobileNav.classList.toggle('active');
+            });
+
+            // Close menu when link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    mobileNav.classList.remove('active');
+                });
+            });
+        });
+
         // Scroll Spy for Sidebar
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('section');
