@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Anglin | AI Engineer</title>
+    <meta name="description"
+        content="AI Engineer specializing in LLMs, RAG systems, and Cloud Architecture. Portfolio of Luke Anglin.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Merriweather (Serif) & Lato (Sans) & Inter (Modern UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav">
+        <a href="#home" class="sidebar-link" aria-label="Home" title="Home">
+            <span class="sidebar-dot"></span>
+            <span class="sidebar-label">Home</span>
+        </a>
+        <a href="#engineer" class="sidebar-link" aria-label="Mission" title="Mission">
+            <span class="sidebar-dot"></span>
+            <span class="sidebar-label">Mission</span>
+        </a>
+        <a href="#projects" class="sidebar-link" aria-label="Projects" title="Projects">
+            <span class="sidebar-dot"></span>
+            <span class="sidebar-label">Projects</span>
+        </a>
+        <a href="#skills" class="sidebar-link" aria-label="Skills" title="Skills">
+            <span class="sidebar-dot"></span>
+            <span class="sidebar-label">Skills</span>
+        </a>
+        <a href="#contact" class="sidebar-link" aria-label="Contact" title="Contact">
+            <span class="sidebar-dot"></span>
+            <span class="sidebar-label">Contact</span>
+        </a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="active">Engineering</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="assets/AIEngineer.pdf" class="resume-link" target="_blank">Resume</a></li>
+                    <li class="social-icons-nav">
+                        <a href="https://www.linkedin.com/in/luke-anglin-9910411b5/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/luke-anglin" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#engineer" class="nav-link">Mission</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="assets/Luke_Anglin_Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                    <li class="mobile-social-icons">
+                        <a href="https://www.linkedin.com/in/luke-anglin-9910411b5/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/luke-anglin" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <img src="assets/images/profile.jpg" alt="Luke Anglin" class="profile-img">
+            <h1>Luke Anglin</h1>
+            <p class="subtitle">AI Engineer & Builder</p>
+        </section>
+
+        <!-- Tech Icon Row (small badges) -->
+        <div class="tech-icons-row container" aria-hidden="false" role="list">
+            <div class="tech-icon-card" role="listitem" title="Neural Networks">
+                <i class="fas fa-brain tech-icon" aria-hidden="true"></i>
+                <div class="tech-icon-label">Neural Nets</div>
+            </div>
+            <div class="tech-icon-card" role="listitem" title="GPU Compute">
+                <i class="fas fa-microchip tech-icon" aria-hidden="true"></i>
+                <div class="tech-icon-label">GPU</div>
+            </div>
+            <div class="tech-icon-card" role="listitem" title="Distributed Parallelism">
+                <i class="fas fa-network-wired tech-icon" aria-hidden="true"></i>
+                <div class="tech-icon-label">Distributed Parallelism</div>
+            </div>
+            <div class="tech-icon-card" role="listitem" title="Cloud / Infra">
+                <i class="fas fa-server tech-icon" aria-hidden="true"></i>
+                <div class="tech-icon-label">Cloud</div>
+            </div>
+            <div class="tech-icon-card" role="listitem" title="Computer Vision">
+                <i class="fas fa-eye tech-icon" aria-hidden="true"></i>
+                <div class="tech-icon-label">Vision</div>
+            </div>
+        </div>
+
+        <!-- Engineer Section (About) -->
+        <section id="engineer" class="section">
+            <div class="content-block">
+                <h2>The Mission</h2>
+                <p>
+                    My goal is simple: build intelligent systems that generate <strong>clear profit</strong>—a rarity in
+                    today's AI landscape.
+                    I focus on deploying <strong>Reinforcement Learning and Deep Learning</strong> solutions that don't
+                    just work, but drive measurable business value through automation and efficiency.
+                </p>
+
+                <div style="margin-top: 2.5rem;">
+                    <h3>Summary</h3>
+                    <p>
+                        I specialize in <strong>Deep Learning and Distributed Training</strong>, optimizing models
+                        purely for speed and memory efficiency. Whether architecting <strong>cloud-native</strong>
+                        solutions or fine-tuning <strong>on-prem</strong> clusters, I ensure infrastructure works as
+                        hard as the models it serves.
+                    </p>
+                    <p>
+                    <p>
+                        I bring <strong>strong backend software expertise</strong> across any environment to help
+                        <strong>financial institutions</strong> maximize measurable savings and profit. I engineer
+                        systems that translate technical performance into direct capital efficiency. I am also a
+                        <strong>Certified CCNA</strong> (Cisco Certified Network Associate), providing me with the
+                        strong networking fundamentals—routing, switching, and protocol security—essential for robust
+                        distributed systems.
+                    </p>
+                    </p>
+
+                    <!-- Credentials Grid -->
+                    <div class="credentials-grid">
+                        <div class="credential-card">
+                            <i class="fas fa-graduation-cap credential-icon"></i>
+                            <div class="credential-title">University of Virginia</div>
+                            <div class="credential-subtitle">B.S. Computer Science</div>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-network-wired credential-icon"></i>
+                            <div class="credential-title">CCNA Certified</div>
+                            <div class="credential-subtitle">Cisco Systems</div>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-briefcase credential-icon"></i>
+                            <div class="credential-title">MBA Candidate</div>
+                            <div class="credential-subtitle">In Progress</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="content-block">
+                <h2>Impact & Projects</h2>
+                <div class="project-logos" aria-hidden="false" role="list" aria-label="Former employers">
+                    <figure class="company-figure" role="listitem">
+                        <img src="assets/company/tesla.svg" alt="Tesla" class="company-logo">
+                        <figcaption class="company-caption">Tesla</figcaption>
+                    </figure>
+                    <figure class="company-figure" role="listitem">
+                        <img src="assets/company/adobe.svg" alt="Adobe" class="company-logo">
+                        <figcaption class="company-caption">Adobe</figcaption>
+                    </figure>
+                    <figure class="company-figure" role="listitem">
+                        <img src="assets/company/ey.svg" alt="Ernst & Young" class="company-logo">
+                        <figcaption class="company-caption">Ernst and Young</figcaption>
+                    </figure>
+                    <figure class="company-figure" role="listitem">
+                        <img src="assets/company/uva.svg" alt="UVA Research" class="company-logo">
+                        <figcaption class="company-caption">UVA Research</figcaption>
+                    </figure>
+                    <figure class="company-figure" role="listitem">
+                        <img src="assets/company/elevance.svg" alt="Elevance Health" class="company-logo">
+                        <figcaption class="company-caption">Elevance</figcaption>
+                    </figure>
+                </div>
+                <div class="project-list" id="projectList">
+
+                    <!-- Clinical Data API -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-file-medical project-icon"></i> EMR AI Extraction
+                                </h3>
+                            </div>
+                            <p class="row-desc">Engineered an LLM-based API to extract structured data from medical
+                                records using OCR & Computer Vision.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LLMs</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">~$2M</span>
+                            <span class="metric-label">Estimated Savings</span>
+                        </div>
+                        <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
+                    </div>
+
+                    <!-- Multimodal RAG -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-project-diagram project-icon"></i> M&A Agentic
+                                    RAG</h3>
+                            </div>
+                            <p class="row-desc">Multimedia Retrieval-Augmented Generation app for M&A teams with a
+                                custom recommendation engine.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">GenAI</span>
+                                <span class="tech-tag">Vector DB</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">200+ Hr</span>
+                            <span class="metric-label">Saved Per Project</span>
+                        </div>
+                        <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
+                    </div>
+
+
+                    <!-- Medicare Bid Model -->
+                    <!-- Medicare Bid Model -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-brain project-icon"></i> RL-Based Bid Model
+                                </h3>
+                            </div>
+                            <p class="row-desc">Reinforcement learning model optimizing financial team operations and
+                                accuracy.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">Reinforcement Learning</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">2 Wks</span>
+                            <span class="metric-label">Reduction / Year</span>
+                        </div>
+                        <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
+                    </div>
+
+                    <!-- Operational Optimization (EY) -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-robot project-icon"></i> Enterprise Workflow
+                                    Automation</h3>
+                            </div>
+                            <p class="row-desc">Architected LangChain applications that optimized workforce allocation
+                                and significantly reduced operational overhead.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">GenAI</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">~$4M</span>
+                            <span class="metric-label">Client Savings</span>
+                        </div>
+                        <img src="assets/company/ey.svg" alt="EY" class="card-company-logo">
+                    </div>
+
+                    <!-- Managed AWS (Adobe) -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fab fa-aws project-icon"></i> Managed AWS Operations
+                                </h3>
+                            </div>
+                            <p class="row-desc">Orchestrated managed AWS infrastructure to support scalable image and
+                                video generation solutions.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Infra-as-Code</span>
+                                <span class="tech-tag">GenAI Media</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">2.5M</span>
+                            <span class="metric-label">Tokens processed / day</span>
+                        </div>
+                        <img src="assets/company/adobe.svg" alt="Adobe" class="card-company-logo">
+                    </div>
+
+                    <!-- Kafka Parallelism (Tesla) -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-bolt project-icon"></i> Kafka Parallelism
+                                    Optimization</h3>
+                            </div>
+                            <p class="row-desc">Implemented parallelism speedups for high-throughput Kafka operations,
+                                enhancing real-time data processing.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">Distributed Systems</span>
+                                <span class="tech-tag">Big Data</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">~2x</span>
+                            <span class="metric-label">Throughput</span>
+                        </div>
+                        <img src="assets/company/tesla.svg" alt="Tesla" class="card-company-logo">
+                    </div>
+
+                    <!-- Distributed Training (UVA) -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-network-wired project-icon"></i> Distributed
+                                    Training Infra</h3>
+                                <img src="assets/company/uva.svg" alt="UVA" class="card-company-logo">
+                            </div>
+                            <p class="row-desc">Experimented with novel distributed training techniques across GPU
+                                clusters to optimize deep learning model performance.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">GPU</span>
+                                <span class="tech-tag">Research</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">55%</span>
+                            <span class="metric-label">Training Speedup (GPU)</span>
+                        </div>
+                    </div>
+
+                    <!-- IoT Federated Learning (UVA) -->
+                    <div class="project-row">
+                        <div class="row-content">
+                            <div class="row-header">
+                                <h3 class="row-title"><i class="fas fa-satellite-dish project-icon"></i> IoT Federated
+                                    Learning</h3>
+                                <img src="assets/company/uva.svg" alt="UVA" class="card-company-logo">
+                            </div>
+                            <p class="row-desc">Employed distributed learning on resource-constrained IoT devices using
+                                GPS data for public transportation systems.</p>
+                            <div class="row-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Federated Learning</span>
+                                <span class="tech-tag">Edge AI</span>
+                            </div>
+                        </div>
+                        <div class="row-metric-container">
+                            <span class="metric-value">60%</span>
+                            <span class="metric-label">Online vs Offline</span>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="content-block">
+                <h2>Technical Arsenal</h2>
+                <div class="skills-grid" id="skillsGrid">
+
+                    <div class="skill-category" data-tags="languages">
+                        <h3>Languages</h3>
+                        <div class="skill-chips">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Go</span>
+                            <span>SQL</span>
+                            <span>JavaScript/TypeScript</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-tags="ai ml">
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-chips">
+                            <span>LLMs</span>
+                            <span>RAG Systems</span>
+                            <span>PyTorch</span>
+                            <span>TensorFlow</span>
+                            <span>Reinforcement Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Distributed Training</span>
+                            <span>Diffusion Models</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-tags="cloud devops">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-chips">
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>GCP</span>
+                            <span>Docker & Kubernetes</span>
+                            <span>Kafka</span>
+                            <span>Snowflake</span>
+                            <span>CI/CD (Jenkins)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Moved from contact.html) -->
+        <!-- Personal (subtle) - small, low-contrast hobbies/passions -->
+        <section id="personal" class="section subtle-section">
+            <div class="content-block" style="text-align:center;">
+                <h2 class="subtle-heading">Personal</h2>
+                
+                <div class="personal-list" role="list" aria-label="Personal interests">
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-dog personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Service dog training</div>
+                    </div>
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-water personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Surfing</div>
+                    </div>
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-music personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Music</div>
+                    </div>
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-gamepad personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Game engines</div>
+                    </div>
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-hammer personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Building</div>
+                    </div>
+                    <div class="personal-item" role="listitem">
+                        <i class="fas fa-language personal-icon" aria-hidden="true"></i>
+                        <div class="personal-label">Languages</div>
+                    </div>
+                </div>
+                <div class="personal-photos" aria-hidden="true">
+                    <!-- Optional: place personal photos in assets/personal/ (e.g. service-dog.jpg) -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="border: none;">
+            <div class="content-block" style="text-align: center;">
+                <h2>Let's Build</h2>
+                <p>Open to discussing complex systems and new opportunities.</p>
+                <div class="contact-form-wrapper">
+                    <form action="https://formspree.io/f/mojjjrwe" method="POST" class="contact-form">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <div style="text-align: center; width: 100%;">
+                            <button type="submit" class="button button-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <div class="social-icons-footer">
+                <a href="https://www.linkedin.com/in/luke-anglin-9910411b5/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/luke-anglin" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Hamburger Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-toggle');
+            const mobileNav = document.getElementById('mobileNav');
+            const navLinks = document.querySelectorAll('.mobile-nav .nav-link');
+
+            hamburger.addEventListener('click', () => {
+                const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isOpen);
+                mobileNav.classList.toggle('active');
+            });
+
+            // Close menu when link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    mobileNav.classList.remove('active');
+                });
+            });
+        });
+
+        // Scroll Spy for Sidebar
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.sidebar-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -80% 0px', // Trigger when section is near top
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active class from all
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        // Add active class to corresponding link
+                        const id = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.sidebar-link[href="#${id}"]`);
+                        if (activeLink) activeLink.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+
+</html>
