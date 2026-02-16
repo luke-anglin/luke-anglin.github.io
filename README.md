@@ -40,5 +40,3 @@ This portfolio showcases:
 - 📄 **Resume**: [View PDF](https://luketyleranglin.github.io/assets/AIEngineer.pdf)
 
 ---
-
-*Built with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.*
