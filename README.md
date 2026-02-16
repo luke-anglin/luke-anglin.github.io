@@ -1,73 +1,44 @@
-# Luke Anglin Portfolio
+# luketyleranglin.github.io
 
-Personal website for Luke Anglin, hosted on GitHub Pages.
+Personal portfolio website of **Luke Tyler Anglin**, an AI Engineer specializing in LLMs, RAG systems, and Cloud Architecture.
 
-## Usage
+🔗 **Live Site**: [luketyleranglin.github.io](https://luketyleranglin.github.io)
 
-1.  **Edit Content**: Modify `index.html`.
-2.  **Edit Styles**: Modify `styles.css`.
-3.  **Publish**: Push to `main`.
+---
 
-**Resume**: Update the link in `index.html` with your direct OneDrive download link.
+## About
 
-## Running Locally
+I build intelligent systems that generate clear profit through Reinforcement Learning and Deep Learning solutions. My focus is on deploying AI that drives measurable business value through automation and efficiency.
 
-To preview the site locally:
+## What's Inside
 
-1.  **Open directly**: You can simply double-click `index.html` to open it in your browser.
-2.  **Using Python (Recommended)**:
-    Run the following command in the terminal from the project directory:
-    # Luke Anglin — Portfolio (static)
+This portfolio showcases:
 
-    This repository contains a small static portfolio website intended for GitHub Pages.
+- **The Mission** – My approach to building profitable AI systems and driving business value
+- **Impact & Projects** – Selected work from Tesla, Adobe, EY, Elevance Health, and UVA Research, including:
+  - EMR AI Extraction (~$2M estimated savings)
+  - M&A Agentic RAG (200+ hours saved per project)
+  - RL-Based Bid Models
+  - Enterprise Workflow Automation (~$4M client savings)
+  - Managed AWS Operations (2.5M tokens/day)
+  - Kafka Parallelism Optimization (~2x throughput)
+  - Distributed Training Infrastructure (55% GPU speedup)
+  - IoT Federated Learning on edge devices
+- **Technical Arsenal** – Expertise in Python, C++, Go, LLMs, PyTorch, Distributed Training, AWS/Azure/GCP, Kubernetes, and more
+- **Personal** – Service dog training, surfing, music, game engines, building, languages
 
-    ## Overview
+## Credentials
 
-    - Type: Static HTML/CSS site (single-page portfolio).
-    - Main entry: [index.html](index.html)
-    - Styles: [styles.css](styles.css)
-    - Assets: `assets/` (images, resume PDF)
-    - Legacy Jekyll site: `_legacy_backup/` (archived Jekyll layout, posts, and Gemfile)
+- 🎓 B.S. Computer Science – University of Virginia
+- 🌐 CCNA Certified – Cisco Systems
+- 📚 MBA Candidate (In Progress)
 
-    ## Quick Local Preview
+## Connect
 
-    You can preview the site locally from the project root.
+- 🐙 **GitHub**: [github.com/luketyleranglin](https://github.com/luketyleranglin)
+- 💼 **LinkedIn**: [linkedin.com/in/luke-anglin-9910411b5](https://www.linkedin.com/in/luke-anglin-9910411b5/)
+- 📄 **Resume**: [View PDF](https://luketyleranglin.github.io/assets/AIEngineer.pdf)
 
-    Open directly in your browser (double-click `index.html`), or run a simple HTTP server:
+---
 
-    ```bash
-    python3 -m http.server 8000
-    # then visit http://localhost:8000
-    ```
-
-    ## Deploy (GitHub Pages)
-
-    - Push the repository to your GitHub account and enable GitHub Pages for the `main` branch (root) in repository settings.
-    - Alternatively deploy from a `gh-pages` branch or use GitHub Actions if you prefer CI-based deploys.
-
-    ## Notes & Actionable Items
-
-    - Contact form in [index.html](index.html) uses a Formspree placeholder `YOUR_FORM_ID`. Replace that with your actual Formspree form ID or replace with another contact method.
-    - Resume link in [index.html](index.html) points to `assets/Luke_Anglin_Resume.pdf`. Confirm the file exists in `assets/` or update the link to the hosted/OneDrive URL you want to use.
-    - Fonts and icons are loaded from external CDNs (Google Fonts and FontAwesome). No build step is required.
-
-    ## Quick checks
-
-    Verify assets and important strings quickly:
-
-    ```bash
-    ls -la assets
-    grep -n "YOUR_FORM_ID" -R || true
-    ```
-
-    ## Cleanup / Notes about `_legacy_backup`
-
-    `_legacy_backup/` contains a prior Jekyll-based version of the site (layouts, `_posts`, Gemfile). It is an archive and not used by the current static site unless you choose to restore a Jekyll workflow.
-
-    If you'd like, I can:
-    - update the Formspree ID in `index.html` (you provide the ID),
-    - verify that `assets/Luke_Anglin_Resume.pdf` and `assets/images/profile.jpg` exist and fix links, or
-    - remove/relocate `_legacy_backup/` (if you want a smaller repo).
-
-    ---
-    Updated: January 17, 2026
+*Built with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.*
