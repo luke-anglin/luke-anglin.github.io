@@ -71,6 +71,14 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Layout container used across header and main sections */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Header */
 header {
   position: sticky;
